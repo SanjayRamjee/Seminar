@@ -1,0 +1,79 @@
+Last login: Mon Nov 27 11:43:51 on ttys000
+sanjayramjee@Sanjays-MacBook-Pro ~ % cd Documents/Seminar/Project
+sanjayramjee@Sanjays-MacBook-Pro Project % ls
+congress.db	db.sql		q1.sql		q3.sql		senators.sql
+congress.py	hreps.sql	q2.sql		q4.sql
+sanjayramjee@Sanjays-MacBook-Pro Project % sqlite3 congress.db < q1.sql
+Hrep|CA|Kim|Young|F|1962-10-18
+Hrep|CA|Levin|Mike|M|1978-10-28
+Hrep|CA|Panetta|Jimmy|M|1969-10-01
+Hrep|CA|Sherman|Brad|M|1954-10-24
+Hrep|FL|Donalds|Byron|M|1978-10-28
+Hrep|GA|Johnson|Henry|M|1954-10-02
+Hrep|GA|McCormick|Rich|M|1968-10-07
+Hrep|IL|Foster|Bill|M|1955-10-07
+Hrep|IL|Quigley|Mike|M|1958-10-17
+Hrep|IL|Underwood|Lauren|F|1986-10-04
+Hrep|IN|Carson|André|M|1974-10-16
+Hrep|IN|Spartz|Victoria|F|1978-10-06
+Hrep|LA|Carter|Troy|M|1963-10-26
+Hrep|LA|Scalise|Steve|M|1965-10-06
+Hrep|MA|Moulton|Seth|M|1978-10-24
+Hrep|MA|Trahan|Lori|F|1973-10-27
+Hrep|MD|Mfume|Kweisi|M|1948-10-24
+Hrep|MN|Omar|Ilhan|F|1981-10-04
+Hrep|MO|Alford|Mark|M|1963-10-04
+Hrep|MO|Burlison|Eric|M|1976-10-02
+Hrep|MO|Cleaver|Emanuel|M|1944-10-26
+Hrep|NC|McHenry|Patrick|M|1975-10-22
+Hrep|ND|Armstrong|Kelly|M|1976-10-08
+Hrep|NJ|Pallone|Frank|M|1951-10-30
+Hrep|NY|Higgins|Brian|M|1959-10-06
+Hrep|NY|Meng|Grace|F|1975-10-01
+Hrep|NY|Molinaro|Marcus|M|1975-10-08
+Hrep|NY|Ocasio-Cortez|Alexandria|F|1989-10-13
+Hrep|OR|Bonamici|Suzanne|F|1954-10-14
+Hrep|TN|Fleischmann|Charles|M|1962-10-11
+Hrep|TN|Kustoff|David|M|1966-10-08
+Hrep|TX|Doggett|Lloyd|M|1946-10-06
+Hrep|TX|Gonzales|Ernest|M|1980-10-10
+Hrep|WY|Hageman|Harriet|F|1962-10-18
+Senator|HI|Schatz|Brian|M|1972-10-20
+Senator|MD|Cardin|Benjamin|M|1943-10-05
+Senator|NC|Budd|Ted|M|1971-10-21
+Senator|NM|Heinrich|Martin|M|1971-10-17
+Senator|OR|Merkley|Jeff|M|1956-10-24
+Senator|RI|Whitehouse|Sheldon|M|1955-10-20
+Senator|SD|Rounds|Mike|M|1954-10-24
+Senator|WA|Cantwell|Maria|F|1958-10-13
+Senator|WA|Murray|Patty|F|1950-10-11
+sanjayramjee@Sanjays-MacBook-Pro Project % sqlite3 congress.db < q2.sql 
+GA|Ossoff|Jon|37.0
+OH|Vance|J.D. (James)|39.0
+AL|Britt|Katie|42.0
+MO|Hawley|Joshua|44.0
+CA|Butler|Laphonza|45.0
+OK|Mullin|Markwayne|46.0
+AR|Cotton|Tom|47.0
+AZ|Sinema|Kyrsten|47.0
+MO|Schmitt|Eric|48.0
+sanjayramjee@Sanjays-MacBook-Pro Project % sqlite3 congress.db < q3.sql
+CA|52
+TX|38
+FL|28
+NY|26
+PA|17
+IL|17
+OH|15
+NC|14
+GA|14
+MI|13
+NJ|12
+VA|11
+WA|10
+sanjayramjee@Sanjays-MacBook-Pro Project % sqlite3 congress.db < q4.sql
+HREP|F|129
+HREP|M|310
+Senate|F|25
+Senate|M|75
+sanjayramjee@Sanjays-MacBook-Pro Project % 
